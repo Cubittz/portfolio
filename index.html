@@ -3,23 +3,59 @@
 <head>
     <meta charset="utf-8">
 
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,800" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
   <body>
-      <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Fresh Tomatoes Modal -->
+    <div class="modal fade" id="fresh-tomatoes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    <h4 class="modal-title" id="myModalLabel">Fresh Tomatoes Movie Project</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://lorempixel.com/555/300">
-                    This was my first project in this class. I learned a lot about HTML and CSS.
+                    <img class="img-responsive" src="images/fresh-tomatoes.jpg" alt="Fresh Tomatoes screenshot">
+                    A python project for looking up and rendering the latest movies and TV shows for the user to browse and watch YouTube trailers.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal -->
+    <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Portfolio Project</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/portfolio.jpg" alt="Portfolio screenshot">
+                    A python project for looking up and rendering the latest movies and TV shows for the user to browse and watch YouTube trailers.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reflections Modal -->
+    <div class="modal fade" id="reflections" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Reflections Project</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/reflections.jpg" alt="House of Parliament reflection">
+                    A python project for looking up and rendering the latest movies and TV shows for the user to browse and watch YouTube trailers.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -28,9 +64,9 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <svg class="logo" width="100" height="100">
+        <header class="row header">
+            <div class="col-md-6 col-sm-6">
+                <svg class="title-logo">
                     <path d="M49 90 L 10 65 L 24 24 L 64 49 Z" fill="rgba(205, 0, 205, .1)" stroke="rgba(0, 0, 0, .1)"></path>
                     <path d="M64 49 L 24 24 L 50 10 L 90 35 Z" fill="rgba(255, 0, 0, .1)" stroke="rgba(0, 0, 0, .1)"></path>
                     <path d="M90 35 L 50 10 L 35 51 L 75 75 Z" fill="rgba(205, 0, 175, .1)" stroke="rgba(0, 0, 0, .1)"></path>
@@ -39,43 +75,36 @@
                     <path d="M10 65 L 35 51 L 50 10 L 24 24 Z" fill="rgba(0, 0, 255, .1)" stroke="rgba(0, 0, 0, .1)"></path>
                 </svg>
             </div>
-            <div class="col-md-6 text-right text-uppercase">
-                <h1>Paul Cubitt</h1>
+            <div class="col-md-6 col-sm-6 text-right">
+                <h1 class="title-super text-thin">Paul Cubitt</h1>
                 <h3>Full Stack Developer</h3>
             </div>
-        </div>
-        <hr />
-        <div>
-            <img class="img-responsive" src="http://lorempixel.com/1140/350">
-        </div>
-        <div>
-            <h2>Featured Work</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://lorempixel.com/555/300" data-toggle="modal" data-target="#project1" >
-                <h3>Appify</h3>
-                <p><a href="http://github.com/">Link to project</a></p>
+        </header>
+        <section>
+            <img class="img-responsive hero" src="images/hero_image.png" alt="Coding colour block image">
+        </section>
+        <article>
+            <div>
+                <h2 class="text-muted text-featured">Featured Work</h2>
             </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://lorempixel.com/555/300">
-                <h3>Appify</h3>
-                <p><a href="http://github.com/">Link to project</a></p>
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-12">
+                    <img class="img-responsive" src="images/fresh-tomatoes.jpg"  alt="Fresh Tomatoes screenshot"data-toggle="modal" data-target="#fresh-tomatoes" >
+                    <h3 class="text-project-title">Fresh Tomatoes</h3>
+                    <p><a href="http://github.com/Cubittz/fresh-tomatoes">http://github.com/Cubittz/fresh-tomatoes</a></p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="img-responsive" src="images/portfolio.jpg"  alt="Portfolio screenshot" data-toggle="modal" data-target="#portfolio" >
+                    <h3 class="text-project-title">Portfolio</h3>
+                    <p><a href="http://github.com/Cubittz/portfolio">http://github.com/Cubittz/portfolio</a></p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="img-responsive" src="images/reflections.jpg" alt="House of Parliament reflection" data-toggle="modal" data-target="#reflections" >
+                    <h3 class="text-project-title">Reflections</h3>
+                    <p><a href="http://github.com/Cubittz/reflections">http://github.com/Cubittz/reflections</a></p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://lorempixel.com/555/300">
-                <h3>Appify</h3>
-                <p><a href="http://github.com/">Link to project</a></p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://lorempixel.com/555/300">
-                <h3>Appify</h3>
-                <p><a href="http://github.com/">Link to project</a></p>
-            </div>
-        </div>
+        </article>
     </div>
-    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>

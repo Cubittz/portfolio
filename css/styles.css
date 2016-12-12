@@ -1,3 +1,44 @@
-.logo {
+body {
+    font-family: "Lato", sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
+}
+
+header {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 5px #7d97ad solid;
+    margin-bottom: 40px;
+}
+
+.title-logo {
     margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.title-super {
+    font-size: 60px;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.text-featured {
+    font-size: 40px;
+}
+
+.text-muted {
+    color: #7d97ad;
+}
+
+.text-project-title {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.hero {
+    width: 100%;
 }
