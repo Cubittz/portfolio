@@ -6,7 +6,8 @@ body {
 
 .header {
     text-transform: uppercase;
-    padding-bottom: 10px;
+}
+hr {
     border-bottom: 5px #7d97ad solid;
     margin-bottom: 40px;
 }
@@ -27,11 +28,12 @@ body {
 
 .text-featured {
     font-size: 40px;
+    padding-bottom: 10px;
 }
 
 .text-muted {
     color: #7d97ad;
-    padding-bottom: 10px;
+    font-weight: 800;
 }
 
 .text-project-title {
@@ -58,11 +60,9 @@ body {
     .title-super {
         font-size: 48px;
     }
-    img {
-        data-toggle: none;
-    }
 }
-@media screen and (max-width: 770px) {
+
+@media screen and (max-width: 740px) {
     .title-super {
         font-size: 42px;
     }
