@@ -50,9 +50,16 @@ body {
     width: 100%;
 }
 
+.modal-content p {
+    font-size: 18px;
+}
+
 @media screen and (max-width: 990px) {
     .title-super {
         font-size: 48px;
+    }
+    img {
+        data-toggle: none;
     }
 }
 @media screen and (max-width: 770px) {
