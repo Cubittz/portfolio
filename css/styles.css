@@ -4,7 +4,7 @@ body {
     font-weight: 300;
 }
 
-header {
+.header {
     text-transform: uppercase;
     padding-bottom: 10px;
     border-bottom: 5px #7d97ad solid;
@@ -31,6 +31,7 @@ header {
 
 .text-muted {
     color: #7d97ad;
+    padding-bottom: 10px;
 }
 
 .text-project-title {
@@ -39,6 +40,23 @@ header {
     font-weight: 800;
 }
 
+.text-link>a {
+    font-size: 1.4em;
+    color: #2d3c49;
+    text-decoration: none;
+}
+
 .hero {
     width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .title-super {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .title-super {
+        font-size: 42px;
+    }
 }
