@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"  initial-scale=1.0 />
 
     <title>Paul Cubitt Portfolio</title>
 
@@ -14,6 +14,7 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
   <body>
+
     <!-- Fresh Tomatoes Modal -->
     <div class="modal fade" id="fresh-tomatoes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -31,6 +32,7 @@
             </div>
         </div>
     </div>
+
     <!-- Portfolio Modal -->
     <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -48,6 +50,7 @@
             </div>
         </div>
     </div>
+
     <!-- Reflections Modal -->
     <div class="modal fade" id="reflections" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -65,8 +68,9 @@
             </div>
         </div>
     </div>
+
     <div class="container">
-        <header class="row header">
+        <header class="header row">
             <div class="col-md-6 col-sm-4 col-xs-4">
                 <!-- svg for a 3d cube -->
                 <svg class="title-logo">
@@ -78,34 +82,41 @@
                     <path d="M10 65 L 35 51 L 50 10 L 24 24 Z" fill="rgba(0, 0, 255, .1)" stroke="rgba(0, 0, 0, .1)"></path>
                 </svg>
             </div>
+
             <div class="col-md-6 col-sm-8 col-xs-8 text-right">
                 <h1 class="title-super text-thin">Paul Cubitt</h1>
                 <h3>Full Stack Developer</h3>
             </div>
+
+            <hr class="col-sm-12">
         </header>
-        <hr>
-        <main>
-            <figure>
-                <img class="img-responsive hero" src="images/hero_image.png"  srcset="images/hero_image-small.png 474w, images/hero_image.png 949w" alt="Coding colour block image">
+
+        <main class="row">
+            <figure class="col-sm-12">
+                <img class="img-responsive hero" src="images/hero-image.jpg"  alt="The author taking shelter in Washington State">
             </figure>
-            <header>
+
+            <header class="col-sm-12">
                 <h2 class="text-muted text-featured">Featured Work</h2>
             </header>
-            <article class="row text-center">
+
+            <article class="col-sm-12 text-center">
                 <section class="col-md-4 col-sm-12">
                     <img class="img-responsive" src="images/fresh-tomatoes.jpg" srcset="images/fresh-tomatoes-small.jpg 646w, images/fresh-tomatoes.jpg 1293w" alt="Fresh Tomatoes screenshot"data-toggle="modal" data-target="#fresh-tomatoes" >
                     <h3 class="text-project-title">Fresh Tomatoes</h3>
-                    <p class="text-link"><a href="http://github.com/Cubittz/fresh-tomatoes">http://github.com/Cubittz/fresh-tomatoes</a></p>
+                    <p class="text-link"><a href="http://github.com/Cubittz/fresh-tomatoes" target="_blank">http://github.com/Cubittz/fresh-tomatoes</a></p>
                 </section>
+
                 <section class="col-md-4 col-sm-12">
                     <img class="img-responsive" src="images/portfolio.jpg" srcset="images/portfolio-small.jpg 646w, images/portfolio.jpg 1293w"  alt="Portfolio screenshot" data-toggle="modal" data-target="#portfolio" >
                     <h3 class="text-project-title">Portfolio</h3>
-                    <p class="text-link"><a href="http://github.com/Cubittz/portfolio">http://github.com/Cubittz/portfolio</a></p>
+                    <p class="text-link"><a href="http://github.com/Cubittz/portfolio" target="_blank">http://github.com/Cubittz/portfolio</a></p>
                 </section>
+
                 <section class="col-md-4 col-sm-12">
                     <img class="img-responsive" src="images/reflections.jpg" srcset="images/reflections-small.jpg 634w, images/reflections.jpg 1268w" alt="Houses of Parliament reflecting in Thames" data-toggle="modal" data-target="#reflections" >
                     <h3 class="text-project-title">Reflections</h3>
-                    <p class="text-link"><a href="http://github.com/Cubittz/reflections">http://github.com/Cubittz/reflections</a></p>
+                    <p class="text-link"><a href="http://github.com/Cubittz/reflections" target="_blank">http://github.com/Cubittz/reflections</a></p>
                 </section>
             </article>
         </main>

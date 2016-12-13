@@ -7,9 +7,15 @@ body {
 .header {
     text-transform: uppercase;
 }
+
 hr {
     border-bottom: 5px #7d97ad solid;
+    width: 100%;
     margin-bottom: 40px;
+}
+
+hr.col-sm-12 {
+    padding: 0;
 }
 
 .title-logo {
